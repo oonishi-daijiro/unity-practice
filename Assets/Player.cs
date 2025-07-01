@@ -79,7 +79,6 @@ public sealed class Player : MonoBehaviour
         {
             vertivalRotationAngle = newVerticalRotationAngle;
         }
-        Debug.Log(vertivalRotationAngle);
         head.transform.rotation = Quaternion.Euler(vertivalRotationAngle, horizonalRotationAngle, 0);
         rigidBdy.transform.rotation = Quaternion.Euler(0, horizonalRotationAngle, 0);
     }

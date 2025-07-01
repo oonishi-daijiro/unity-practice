@@ -11,7 +11,7 @@ public class RandomLaser : MonoBehaviour
         {
             var randomPos = new Vector3(Random.Range(-10, 10), Random.Range(0, 5), Random.Range(-10, 10));
             var randomRot = Quaternion.Euler(Random.Range(-180, 180), Random.Range(-180, 180), Random.Range(-180, 180));
-            Instantiate(original, randomPos, randomRot); // do not pass own game object at first argument!!!!
+            Instantiate(original, randomPos, randomRot, gameObject.transform); // do not pass own game object at first argument!!!!
         }
     }
 
