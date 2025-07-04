@@ -85,10 +85,6 @@ public sealed class Player : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Floor"))
-        {
-            isOnGround = true;
-            animator.SetTrigger("Land");
-        }
+
     }
 }
